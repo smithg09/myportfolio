@@ -619,11 +619,15 @@ animation-name: scroll-cta-anim2;
 
 	}
 
-	.develop {
-				display: flex;
-				margin-top: 5rem;
-				flex-direction: row-reverse;
-			}
+.design {
+	display: flex;
+}
+
+.develop {
+			display: flex;
+			margin-top: 5rem;
+			flex-direction: row-reverse;
+		}
 
 /* Form */
 
