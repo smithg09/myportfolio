@@ -286,7 +286,7 @@ animation-name: scroll-cta-anim2;
 			z-index: -1;
 			background-attachment: fixed;
 			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
+			/* background-image: url("../../images/overlay.png"), url("../../images/bg.jpg"); */
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
@@ -3591,8 +3591,8 @@ animation-name: scroll-cta-anim2;
 		@media screen and (orientation: portrait) {
 
 			#page-wrapper {
-				padding-left: 2rem;
-				padding-right: 2rem;
+				/* padding-left: 2rem;
+				padding-right: 2rem; */
 			}
 
 		}
@@ -3600,7 +3600,7 @@ animation-name: scroll-cta-anim2;
 		@media screen and (min-aspect-ratio: 16 / 7) {
 
 			#page-wrapper {
-				padding: 6vh;
+				/* padding: 6vh; */
 			}
 
 		}
@@ -3617,7 +3617,7 @@ animation-name: scroll-cta-anim2;
 
 		#page-wrapper {
 			height: auto;
-			padding: 1rem;
+			/* padding: 1rem; */
 		}
 
 	}
