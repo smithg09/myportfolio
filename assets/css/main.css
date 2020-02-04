@@ -60,6 +60,13 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+.head-2 {
+text-align: center;
+margin: 0rem 0rem 6rem 0rem;
+font-family: 'Montserrat', sans-serif;
+letter-spacing: 0.2px;
+}
+
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -688,7 +695,10 @@ animation-name: scroll-cta-anim2;
 			/* .design > .lottie-player{
 				padding-bottom: 20px;
 			} */
-			
+			.head-2 {
+				margin: 0rem 0rem 3rem 0rem;
+			}
+				
 			.develop {
 				display: flex;
 				margin-top: 5rem;
@@ -697,6 +707,9 @@ animation-name: scroll-cta-anim2;
 				align-items: center;
 			}
 
+			.lottie-player {
+				margin-bottom: 2rem;
+			}
 			form > .fields {
 				width: calc(100% + 2.25rem);
 				margin: -1.125rem 0 1.5rem -1.125rem;
@@ -3575,7 +3588,7 @@ animation-name: scroll-cta-anim2;
 				/* background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.125) 30%, rgba(0, 0, 0, 0.175) 50%); */
 				background-color: #09244D;
 			} 
-			
+
 		.panel.spotlight .content {
 			padding: 2.8875rem 1.75rem 1.3875rem 1.75rem ;
 			-moz-flex-direction: column !important;
