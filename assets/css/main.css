@@ -67,6 +67,13 @@ font-family: 'Montserrat', sans-serif;
 letter-spacing: 0.2px;
 }
 
+.tech-head {
+	text-align: center;
+	margin: 0rem 0rem 3rem 0rem;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.2px;
+}
+
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -628,14 +635,67 @@ animation-name: scroll-cta-anim2;
 
 .design {
 	display: flex;
+
+}
+.icon-design {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.icon-design > img {
+	margin: 0rem 2rem;
+}
+
+.lottie-player {
+	position: relative;
+    top: -30px;
+    left: -47px;
+}
+
+.bg-panel {
+	background-color: #021d44;
 }
 
 .develop {
 			display: flex;
-			margin-top: 3rem;
+			margin-top: 2rem;
 			flex-direction: row-reverse;
 		}
 
+.develop-skills {
+	margin-top: 1rem;
+}
+
+.ul-class { 
+	/* list-style-image: url('../icons/icons8-angularjs-100.svg'); */
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.m1 {
+	letter-spacing: 0.6px;
+	font-weight: lighter;
+}
+
+.ul-class > li:before {
+	content: "▹";
+    position: relative;
+    left: 0px;
+    margin-right: 0.5rem;
+    color: rgba(238, 60, 83, 0.79);
+    font-size: 19px;
+    line-height: 12px;
+}
+
+.ul-class > li {
+	margin: 0rem 1.4rem;
+}
 /* Form */
 
 	form {
@@ -700,6 +760,10 @@ animation-name: scroll-cta-anim2;
 				padding-bottom: 20px;
 			} */
 			.head-2 {
+				margin: 0rem 0rem 3rem 0rem;
+			}
+
+			.tech-head {
 				margin: 0rem 0rem 3rem 0rem;
 			}
 				
