@@ -766,7 +766,13 @@ animation-name: scroll-cta-anim2;
 			.tech-head {
 				margin: 0rem 0rem 3rem 0rem;
 			}
-				
+
+			.lottie-player {
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+
 			.develop {
 				display: flex;
 				margin-top: 5rem;
