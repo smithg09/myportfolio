@@ -2979,9 +2979,9 @@ animation-name: scroll-cta-anim2;
 			}
 
 			.panel > *.color2 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				/* background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)); */
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
+				/* background-color: #e37b7c; */
 			}
 
 			.panel > *.color3 {
@@ -3442,9 +3442,9 @@ animation-name: scroll-cta-anim2;
 			}
 
 			.panel.color4-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				/* background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175)); */
 				background-size: 128px 128px, auto;
-				background-color: #323459;
+				background-color: #09244D;
 			}
 
 	}
