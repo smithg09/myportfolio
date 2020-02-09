@@ -10,6 +10,13 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 		<link rel="manifest" href="images/site.webmanifest">
+		
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="github-activity-0.1.5.min.css">
+
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+        <script type="text/javascript" src="github-activity-0.1.5.min.js"></script>
+
 		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 		<script>
@@ -207,9 +214,10 @@ Have a project, idea or problem you'd like to discuss?<br>Let's chat
 
 <section class=" panel spotlight medium right" id="first">
 <div class="content span-7" style="background-color: #09244D;">
+<script type="text/javascript" src="https://github-profile.com/dist/gh-profile-card.min.js"></script>
+
 
 		<h1 class="tech-head">My Github Profile</h1>
-<div class="github-card" data-github="smithg09" data-width="400" data-height="150" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <!-- Include the library. -->
@@ -225,7 +233,16 @@ rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-cale
     Loading the data just for you.
 </div>
 
+<div id="feed"></div>
+
 <script>
+GitHubActivity.feed({
+	username: "smithg09",
+	// repository: "your-repo", // optional
+	selector: "#feed",
+	limit: 20 // optional
+});
+
     GitHubCalendar(".calendar", "smithg09");
     // or enable responsive functionality
     GitHubCalendar(".calendar", "smithg09", {responsive: true});
