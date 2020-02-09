@@ -866,7 +866,7 @@ animation-name: scroll-cta-anim2;
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ffe4b4;
+			border-color: white;
 		}
 
 	option {
@@ -1838,9 +1838,8 @@ animation-name: scroll-cta-anim2;
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: white;
 			box-shadow: none;
-			color: #2e2b37 !important;
+			border: 2px solid white;
 		}
 
 			input[type="submit"].primary.color1,
@@ -1880,7 +1879,8 @@ animation-name: scroll-cta-anim2;
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ffe4b4;
+				background-color: white;
+				color: #09244d !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2417,7 +2417,7 @@ animation-name: scroll-cta-anim2;
 			.panel > *.color2 {
 				/* background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)); */
 				background-size: 128px 128px, auto;
-				background-color: #09244D;
+				background-color: #021d44;
 			}
 
 			.panel > *.color3 {
