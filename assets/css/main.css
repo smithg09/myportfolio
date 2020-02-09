@@ -55,6 +55,19 @@ mark {
 	color: inherit;
 }
 
+.LI-profile-badge {
+	background-color: white;
+	transition: all 0.5s;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.LI-profile-badge:hover {
+	transition: all 0.5s;
+	transform: translateY(-10px);
+	box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
@@ -1574,7 +1587,7 @@ animation-name: scroll-cta-anim2;
 				background-color: white;
 				color: #2e2b37;
 				cursor: default;
-				font-size: 1.125rem;
+				font-size: 1.4rem;
 				margin-right: 1rem;
 				text-align: center;
 				vertical-align: middle;
@@ -1589,7 +1602,7 @@ animation-name: scroll-cta-anim2;
 			}
 
 		ul.contact-icons.color1 > li:before {
-			color: #726193;
+			color: #09244d;
 		}
 
 		ul.contact-icons.color2 > li:before {
@@ -2469,7 +2482,7 @@ animation-name: scroll-cta-anim2;
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
-			width: 22rem;
+			width: 30rem;
 		}
 
 			.panel > .intro.joined {
