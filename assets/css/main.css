@@ -760,7 +760,7 @@ animation-name: scroll-cta-anim2;
 		@media screen and (max-width: 736px) {
 			
 			ul.actions { 
-				display: none !important;
+				display: block !important;
 			}
 			
 			.design {
