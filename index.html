@@ -19,6 +19,24 @@
 
 		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+		<style>
+		
+			.position-relative {
+				padding: 20px;
+				width: 100%;
+			}
+
+			.contrib-number {
+				color: white !important;
+			}
+
+		</style>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+		<script type="text/javascript">
+		(function(){
+			emailjs.init("user_VTGZJ9C6nrC10O83MpuNR");
+		})();
+		</script>
 		<script>
 							var TxtRotate = function(el, toRotate, period) {
 				this.toRotate = toRotate;
@@ -236,7 +254,7 @@ rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-cale
     Loading the data just for you.
 </div>
 
-<div id="feed"></div>
+<!-- <div id="feed"></div> -->
 
 <script>
 GitHubActivity.feed({
@@ -331,7 +349,7 @@ GitHubActivity.feed({
 											<div class="fields">
 												<div class="field half">
 													<label for="name">Name</label>
-													<input type="text" name="name" id="name" />
+													<input type="text"  name="name" id="name" />
 												</div>
 												<div class="field half">
 													<label for="email">Email</label>
@@ -343,7 +361,7 @@ GitHubActivity.feed({
 												</div>
 											</div>
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="button primary" /></li>
+												<li><input type="button" value="Send Message" onclick="send_mail()" class="button primary" /></li>
 											</ul>
 										</form>
 									</div>
@@ -636,6 +654,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</div>
 
 		<!-- Scripts -->
+			<script> 
+				function send_mail() {
+					var email = document.getElementById("email").value
+					var template_params = {
+						"reply_to": "smith.gajjar@gmail.com",
+						"from_name": email ,
+						"to_name": "Smith Gajjar",
+						"message_html": document.getElementById("name").value + " Sent "+ document.getElementById("message").value 
+						}
+
+					var service_id = "gmail";
+					var template_id = "template_YwsNKyHb";
+					emailjs.send(service_id, template_id, template_params);
+					alert("Message Sent!")
+				}
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
