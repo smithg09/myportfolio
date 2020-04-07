@@ -36,6 +36,9 @@
 		})();
 		</script>
 		<script>
+				
+
+
 							var TxtRotate = function(el, toRotate, period) {
 				this.toRotate = toRotate;
 				this.el = el;
@@ -96,6 +99,18 @@
 		function close_modal() {
 			document.getElementById('target-content').style.display = "none";
 		}
+	
+	setTimeout(() => {
+		const queryString = window.location.search;
+					const urlParams = new URLSearchParams(queryString);
+					const id = urlParams.get('id')
+					console.log(id);
+	
+					if( id === "SG09OWR") {
+						close_modal();
+					}
+
+	}, 2000)	
 		</script>
 	</head>
 	<body class="is-preload" >
