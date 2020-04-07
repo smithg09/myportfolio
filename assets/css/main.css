@@ -1,6 +1,65 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
 
+#target-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999999999999999999999999999;
+  /* pointer-events: none; */
+  /* opacity: 1; */
+  display: block;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+#target-content:target {
+  pointer-events: all;
+  opacity: 1;
+}
+
+
+
+#target-content #target-inner {
+  position: absolute;
+    display: block;
+    padding: 42px;
+    line-height: 1.8;
+	width: 65%;
+	font-size: 1.1rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 10px 12px 24px rgba(0, 0, 0, 0.2);
+    background: #021d44;
+    border-radius: 6px;
+    color: #ffffff;
+}}
+#target-content #target-inner h2 {
+  margin-top: 0;
+}
+#target-content #target-inner code {
+  font-weight: bold;
+}
+#target-content a.close {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #34495E;
+  opacity: 0.5;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+#target-content a.close:hover {
+  opacity: 0.4;
+}
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -526,7 +585,7 @@ animation-name: scroll-cta-anim2;
 	blockquote {
 		border-left: solid 0.25rem rgba(255, 255, 255, 0.25);
 		font-style: italic;
-		margin: 0 0 1.5rem 0;
+		margin: 1rem 0 1rem 0;
 		padding: 0.375rem 0 0.375rem 1.5rem;
 	}
 
