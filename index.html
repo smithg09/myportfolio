@@ -99,6 +99,9 @@
 		function close_modal() {
 			document.getElementById('target-content').style.display = "none";
 		}
+		function open_modal() {
+			document.getElementById('target-content').style.display = "block";
+		}
 	
 	setTimeout(() => {
 		const queryString = window.location.search;
@@ -108,6 +111,9 @@
 	
 					if( id === "SG09OWR") {
 						close_modal();
+					}
+					else {
+						open_modal();
 					}
 
 	}, 2000)	
